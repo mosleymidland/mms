@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact &amp; Location | Blossom Buffet — West Columbia, SC</title>
+  <meta name="description" content="Find Blossom Buffet at 2515 Sunset Blvd, West Columbia, SC 29169. Get directions, hours, phone number and parking info. Open 7 days a week.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Blossom Buffet Home">
+        <span class="blossom-icon" aria-hidden="true">&#127800;</span>
+        Blossom <span>Buffet</span>
+      </a>
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" role="menubar">
+        <a href="index.html" role="menuitem">Home</a>
+        <a href="menu.html" role="menuitem">Menu</a>
+        <a href="about.html" role="menuitem">About</a>
+        <a href="gallery.html" role="menuitem">Gallery</a>
+        <a href="reservations.html" role="menuitem">Reservations</a>
+        <a href="order.html" role="menuitem">Order</a>
+        <a href="contact.html" class="active" role="menuitem">Contact</a>
+        <a href="reviews.html" role="menuitem">Reviews</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="container">
+      <h1>Contact &amp; Location</h1>
+      <p>Find us, reach us, visit us — we're open 7 days a week</p>
+    </div>
+  </header>
+
+  <!-- Map & Info -->
+  <section class="section" aria-labelledby="location-heading">
+    <div class="container">
+      <h2 class="sr-only" id="location-heading">Our Location</h2>
+      <div class="info-grid">
+        <div class="fade-up">
+          <div class="map-container">
+            <iframe
+              title="Blossom Buffet location on Google Maps"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.5!2d-81.108!3d33.993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDU5JzM0LjgiTiA4McKwMDYnMjguOCJX!5e0!3m2!1sen!2sus!4v1700000000000"
+              width="600"
+              height="350"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+        <div class="fade-up">
+          <div class="info-box" style="margin-bottom:20px;">
+            <h3>&#128205; Address</h3>
+            <p style="font-size:1.1rem; font-weight:600;">2515 Sunset Blvd<br>West Columbia, SC 29169</p>
+            <p style="color:var(--gray); font-size:0.9rem;">Free on-site parking available</p>
+          </div>
+          <div class="info-box" style="margin-bottom:20px;">
+            <h3>&#128222; Phone</h3>
+            <p><a href="tel:+18039398888" style="font-size:1.2rem; font-weight:700;">(803) 939-8888</a></p>
+            <p style="color:var(--gray); font-size:0.9rem;">For reservations, carry-out, and general inquiries</p>
+          </div>
+          <div class="info-box">
+            <h3>&#128336; Hours of Operation</h3>
+            <table class="hours-table">
+              <tr><td>Monday – Friday</td><td>11:00 AM – 9:30 PM</td></tr>
+              <tr><td>&nbsp;&nbsp;Lunch</td><td>11:00 AM – 3:15 PM</td></tr>
+              <tr><td>&nbsp;&nbsp;Dinner</td><td>3:30 PM – 9:30 PM</td></tr>
+              <tr><td>Saturday – Sunday</td><td>11:00 AM – 9:30 PM</td></tr>
+              <tr><td colspan="2" style="color:var(--gray); font-size:0.85rem; padding-top:8px;">Weekend is all-day dinner pricing ($17.25 + tax)</td></tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="section section-alt" aria-labelledby="contact-form-heading">
+    <div class="container">
+      <div class="section-header">
+        <h2 id="contact-form-heading">Send Us a Message</h2>
+        <p>Questions, feedback, or catering inquiries — we'd love to hear from you</p>
+        <div class="divider" aria-hidden="true"></div>
+      </div>
+      <form id="contact-form" style="max-width:700px; margin:0 auto;" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="contact-name">Your Name *</label>
+            <input type="text" id="contact-name" name="name" required placeholder="Full name">
+          </div>
+          <div class="form-group">
+            <label for="contact-email">Email Address *</label>
+            <input type="email" id="contact-email" name="email" required placeholder="your@email.com">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="contact-subject">Subject</label>
+          <select id="contact-subject" name="subject">
+            <option value="general">General Inquiry</option>
+            <option value="reservation">Reservation Question</option>
+            <option value="catering">Catering Request</option>
+            <option value="feedback">Feedback</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="contact-message">Message *</label>
+          <textarea id="contact-message" name="message" required placeholder="How can we help?"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Quick Facts -->
+  <section class="section section-dark" aria-label="Quick details">
+    <div class="container">
+      <div class="features-grid">
+        <div class="feature-card fade-up" style="background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.1);">
+          <span class="feature-icon" aria-hidden="true">&#128663;</span>
+          <h3 style="color:var(--white);">Free Parking</h3>
+          <p style="color:rgba(255,255,255,0.7);">Spacious free parking lot right in front of the restaurant. Easy access off Sunset Blvd.</p>
+        </div>
+        <div class="feature-card fade-up" style="background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.1);">
+          <span class="feature-icon" aria-hidden="true">&#9855;</span>
+          <h3 style="color:var(--white);">Accessible</h3>
+          <p style="color:rgba(255,255,255,0.7);">Wheelchair accessible entrance, restrooms, and dining areas. All buffet stations at accessible height.</p>
+        </div>
+        <div class="feature-card fade-up" style="background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.1);">
+          <span class="feature-icon" aria-hidden="true">&#128179;</span>
+          <h3 style="color:var(--white);">Payment Options</h3>
+          <p style="color:rgba(255,255,255,0.7);">We accept all major credit cards, debit cards, and cash. Payment at time of seating.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>&#127800; Blossom Buffet</h4>
+          <p>Fresh Asian cuisine in a beautiful cherry-blossom setting. Sushi, hibachi, seafood, and over 200 dishes — all you can eat.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="menu.html">Menu &amp; Pricing</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Photo Gallery</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="order.html">Order Online</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Hours</h4>
+          <ul>
+            <li>Mon – Fri: 11:00 AM – 9:30 PM</li>
+            <li>Lunch: 11:00 AM – 3:15 PM</li>
+            <li>Dinner: 3:30 PM – 9:30 PM</li>
+            <li>Sat – Sun: 11:00 AM – 9:30 PM</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li>2515 Sunset Blvd</li>
+            <li>West Columbia, SC 29169</li>
+            <li><a href="tel:+18039398888">(803) 939-8888</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Blossom Buffet. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

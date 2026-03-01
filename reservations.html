@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservations &amp; Parties | Blossom Buffet</title>
+  <meta name="description" content="Reserve a table at Blossom Buffet. Walk-ins welcome! Book ahead for large parties and private events. Family-friendly Asian buffet in West Columbia, SC.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Blossom Buffet Home">
+        <span class="blossom-icon" aria-hidden="true">&#127800;</span>
+        Blossom <span>Buffet</span>
+      </a>
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" role="menubar">
+        <a href="index.html" role="menuitem">Home</a>
+        <a href="menu.html" role="menuitem">Menu</a>
+        <a href="about.html" role="menuitem">About</a>
+        <a href="gallery.html" role="menuitem">Gallery</a>
+        <a href="reservations.html" class="active" role="menuitem">Reservations</a>
+        <a href="order.html" role="menuitem">Order</a>
+        <a href="contact.html" role="menuitem">Contact</a>
+        <a href="reviews.html" role="menuitem">Reviews</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="container">
+      <h1>Reservations &amp; Parties</h1>
+      <p>Walk-ins always welcome &middot; Reserve ahead for groups of 7+</p>
+    </div>
+  </header>
+
+  <!-- Reservation Form -->
+  <section class="section" aria-labelledby="reserve-heading">
+    <div class="container">
+      <div class="info-grid">
+        <div class="fade-up">
+          <h2 id="reserve-heading" style="margin-bottom:8px;">Reserve Your Table</h2>
+          <p style="color:var(--gray); margin-bottom:24px;">Fill out the form below and we'll confirm your reservation by phone or email. For immediate assistance, call us at <a href="tel:+18039398888">(803) 939-8888</a>.</p>
+          <form id="reservation-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="res-name">Full Name *</label>
+                <input type="text" id="res-name" name="name" required placeholder="Your name">
+              </div>
+              <div class="form-group">
+                <label for="res-phone">Phone Number *</label>
+                <input type="tel" id="res-phone" name="phone" required placeholder="(xxx) xxx-xxxx">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="res-email">Email</label>
+                <input type="email" id="res-email" name="email" placeholder="your@email.com">
+              </div>
+              <div class="form-group">
+                <label for="res-guests">Number of Guests *</label>
+                <select id="res-guests" name="guests" required>
+                  <option value="">Select...</option>
+                  <option value="1-2">1 – 2</option>
+                  <option value="3-4">3 – 4</option>
+                  <option value="5-6">5 – 6</option>
+                  <option value="7-10">7 – 10</option>
+                  <option value="11-15">11 – 15</option>
+                  <option value="16-20">16 – 20</option>
+                  <option value="20+">20+</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="res-date">Preferred Date *</label>
+                <input type="date" id="res-date" name="date" required>
+              </div>
+              <div class="form-group">
+                <label for="res-time">Preferred Time *</label>
+                <select id="res-time" name="time" required>
+                  <option value="">Select...</option>
+                  <option value="11:00">11:00 AM</option>
+                  <option value="11:30">11:30 AM</option>
+                  <option value="12:00">12:00 PM</option>
+                  <option value="12:30">12:30 PM</option>
+                  <option value="13:00">1:00 PM</option>
+                  <option value="13:30">1:30 PM</option>
+                  <option value="14:00">2:00 PM</option>
+                  <option value="14:30">2:30 PM</option>
+                  <option value="15:00">3:00 PM</option>
+                  <option value="15:30">3:30 PM</option>
+                  <option value="16:00">4:00 PM</option>
+                  <option value="16:30">4:30 PM</option>
+                  <option value="17:00">5:00 PM</option>
+                  <option value="17:30">5:30 PM</option>
+                  <option value="18:00">6:00 PM</option>
+                  <option value="18:30">6:30 PM</option>
+                  <option value="19:00">7:00 PM</option>
+                  <option value="19:30">7:30 PM</option>
+                  <option value="20:00">8:00 PM</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="res-occasion">Occasion (optional)</label>
+              <select id="res-occasion" name="occasion">
+                <option value="">None / General Dining</option>
+                <option value="birthday">Birthday</option>
+                <option value="anniversary">Anniversary</option>
+                <option value="graduation">Graduation</option>
+                <option value="family">Family Gathering</option>
+                <option value="corporate">Corporate / Work Event</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="res-notes">Special Requests or Notes</label>
+              <textarea id="res-notes" name="notes" placeholder="High chair needed, wheelchair access, dietary needs, etc."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Request Reservation</button>
+          </form>
+        </div>
+
+        <div class="fade-up">
+          <div class="info-box" style="margin-bottom:24px;">
+            <h3>&#127881; Private Events &amp; Parties</h3>
+            <p>Blossom Buffet is perfect for celebrations! We can accommodate large groups and offer private dining arrangements for:</p>
+            <ul>
+              <li>&#8226; Birthday parties</li>
+              <li>&#8226; Anniversary dinners</li>
+              <li>&#8226; Graduation celebrations</li>
+              <li>&#8226; Corporate events &amp; team lunches</li>
+              <li>&#8226; Family reunions</li>
+              <li>&#8226; Holiday gatherings</li>
+            </ul>
+            <p style="margin-top:12px;">For parties of 20 or more, please call us directly to discuss arrangements and pricing.</p>
+            <a href="tel:+18039398888" class="btn btn-outline" style="margin-top:8px;">Call (803) 939-8888</a>
+          </div>
+
+          <div class="info-box">
+            <h3>&#128203; Good to Know</h3>
+            <ul>
+              <li>&#8226; Walk-ins are always welcome</li>
+              <li>&#8226; Reservations help us prepare, especially for large groups</li>
+              <li>&#8226; 15% gratuity is added for parties of 7 or more</li>
+              <li>&#8226; 2-hour dining maximum for all parties</li>
+              <li>&#8226; Payment is required at time of seating</li>
+              <li>&#8226; Lunch: Mon–Fri 11:00 AM – 3:15 PM</li>
+              <li>&#8226; Dinner: Mon–Fri 3:30 PM – 9:30 PM</li>
+              <li>&#8226; Sat–Sun: 11:00 AM – 9:30 PM (dinner pricing all day)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>&#127800; Blossom Buffet</h4>
+          <p>Fresh Asian cuisine in a beautiful cherry-blossom setting. Sushi, hibachi, seafood, and over 200 dishes — all you can eat.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="menu.html">Menu &amp; Pricing</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Photo Gallery</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="order.html">Order Online</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Hours</h4>
+          <ul>
+            <li>Mon – Fri: 11:00 AM – 9:30 PM</li>
+            <li>Lunch: 11:00 AM – 3:15 PM</li>
+            <li>Dinner: 3:30 PM – 9:30 PM</li>
+            <li>Sat – Sun: 11:00 AM – 9:30 PM</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li>2515 Sunset Blvd</li>
+            <li>West Columbia, SC 29169</li>
+            <li><a href="tel:+18039398888">(803) 939-8888</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Blossom Buffet. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
